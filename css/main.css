@@ -21,6 +21,7 @@ h2{
 h3{
     color: var(--primary__color);
     font-size: 2.4rem;
+    margin-bottom: 24px;
 }
 
 /* NAVBAR */
