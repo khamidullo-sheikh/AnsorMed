@@ -1,0 +1,136 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:wght@400;600;700&display=swap');
+:root{
+    --body__font: 'Open Sans', 'Arial', 'Arial Black', sans-serif;
+    --secondary__font: 'Open Sans Condensed', 'Arial', 'Arial Black', sans-serif;
+}
+
+/* COLORS */
+
+:root{
+    --main__color: #fff;
+    --primary__color: #222;
+    --secondary__color: #444;
+    --btn__color: #DE2E54;
+    --bg__main__color: #0EB4C1;
+}
+
+/* BUTTONS */
+
+.btn{
+    padding: 12px 24px;
+    color: var(--main__color);
+    border: 2px solid var(--btn__color);
+    border-radius: 8px;
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -webkit-transition: color .3s linear, 
+                background-color .3s linear, 
+                opacity .3s linear,
+                border-color .3s linear;
+    -o-transition: color .3s linear, 
+                background-color .3s linear, 
+                opacity .3s linear,
+                border-color .3s linear;
+    transition: color .3s linear, 
+                background-color .3s linear, 
+                opacity .3s linear,
+                border-color .3s linear;
+}
+
+.btn__primary,
+.btn__secondary{
+    background-color: var(--btn__color);
+}
+
+.btn__transparent{
+    background-color: transparent;
+    border-color: var(--main__color);
+}
+
+.btn__primary:hover{
+    background-color: transparent;
+    color: var(--btn__color);
+}
+
+.btn__secondary:hover{
+    opacity: .8;
+}
+
+.btn__primary:active,
+.btn__secondary:active{
+    background-color: var(--btn__color);
+    color: var(--main__color);
+    opacity: .6;
+}
+
+.btn__transparent:hover{
+    background-color: var(--btn__color);
+    border-color: var(--btn__color);
+}
+
+.btn__transparent:active{
+    background-color: var(--btn__color);
+    border-color: var(--btn__color);
+    opacity: .6;
+}
+
+/* STYLES */
+
+html{
+    font-size: 62.5%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+body{
+    font-family: var(--body__font);
+    font-size: 1.6rem;
+    line-height: 150%;
+    font-weight: 400;
+    background-color: var(--main__color);
+    color: var(--secondary__color);
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
